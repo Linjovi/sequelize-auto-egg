@@ -1,0 +1,40 @@
+{
+  "name": "sequelize-auto-egg",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "sequelize-auto-egg": "bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node bin/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linjovi/sequelize-auto-egg.git"
+  },
+  "author": "Jovi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Linjovi/sequelize-auto-egg/issues"
+  },
+  "homepage": "https://github.com/Linjovi/sequelize-auto-egg#readme",
+  "dependencies": {
+    "commander": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^14.0.27",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "standard-version": "^8.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
