@@ -1,6 +1,7 @@
-export default abstract class AbstractAction {
+import {  NewCmd } from "../commands";
+
+export abstract class AbstractAction {
   public abstract async handle(
-    inputs?: any,
-    options?: any
+    inputs?: NewCmd
   ): Promise<void>;
 }

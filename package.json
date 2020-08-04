@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/Linjovi/sequelize-auto-egg#readme",
   "dependencies": {
-    "commander": "^6.0.0"
+    "commander": "^6.0.0",
+    "sequelize-auto": "^0.5.3"
   },
   "devDependencies": {
     "@types/commander": "^2.12.2",

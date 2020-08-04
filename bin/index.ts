@@ -2,7 +2,7 @@
 
 import * as commander from 'commander';
 import { CommanderStatic } from 'commander';
-import CommandLoader from '../commands/index';
+import { CommandLoader } from '../commands';
 
 const bootstrap = () => {
   const program: CommanderStatic = commander;
