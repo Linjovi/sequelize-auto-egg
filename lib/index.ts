@@ -49,4 +49,4 @@ export function genEggSequelize() {
   });
 }
 
-genEggSequelize();
+// genEggSequelize();
