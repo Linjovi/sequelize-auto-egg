@@ -1,11 +1,11 @@
 {
   "name": "sql-auto-egg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
-  "main":"lib/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node bin/index.ts",
+    "start": "ts-node lib/index.ts",
     "build:clear": "find ./lib -type f -name '*.d.ts' -delete & find ./lib -type f -not -name '*.ts*' -delete",
     "commit": "git-cz .",
     "release": "standard-version",
