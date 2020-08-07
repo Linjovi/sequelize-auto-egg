@@ -19,7 +19,7 @@ export default class SequelizeAutoEgg extends SequelizeAuto {
         .split(/sequelize\.define.+\,/g)[1]
         .split(", {")[0];
       controllerObj[table] = modelObj[table]
-        .replace(/DataTypes\.BIGINT/g, "'number'")
+        .replace(/DataTypes\.(BIGINT|DECIMAL)/g, "'number'")
         .replace(/DataTypes\.STRING\(\d+\)/g, "'string'")
         .replace(/comment\: \'/g, "description: '")
         .replace(/allowNull\: (true|false)\,\n\t+/g, "")
