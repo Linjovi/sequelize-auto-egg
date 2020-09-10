@@ -29,7 +29,7 @@ export default class SequelizeAutoEgg extends SequelizeAuto {
         .replace(/\tunique: true,\n\t\t/g, "")
         .replace(/\tdefaultValue: [0-9\.a-zA-Z\']+\,\n\t\t/g, "")
         .replace(/\n\t/g, '\n')
-        .replace('&quot;',"'");
+        .replace('"',"'");
     });
     this.eggModel = modelObj;
     this.controllerModel = controllerObj;
@@ -38,11 +38,11 @@ export default class SequelizeAutoEgg extends SequelizeAuto {
 }
 
 export function genEggSequelize() {
-  const auto = new SequelizeAutoEgg("crmdb", "root", "12345", {
-    host: "127.0.0.1",
+  const auto = new SequelizeAutoEgg("study", "study_test", "kwwHn4JzfIoL", {
+    host: "10.172.131.26",
     dialect: "mysql",
     port: "3306",
-    tables: ["ykt_course_income"],
+    tables: ["ykt_live_user_poll"],
     camelCase: true,
   });
   auto.run(function (err: any) {
@@ -50,4 +50,4 @@ export function genEggSequelize() {
   });
 }
 
-// genEggSequelize();
+genEggSequelize();
