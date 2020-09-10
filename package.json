@@ -1,6 +1,6 @@
 {
   "name": "sql-auto-egg",
-  "version": "0.2.3",
+  "version": "0.2.6",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -27,15 +27,15 @@
   },
   "homepage": "https://github.com/Linjovi/sequelize-auto-egg#readme",
   "dependencies": {
-    "sequelize": "^6.3.4",
-    "sequelize-auto": "^0.5.3",
-    "mysql2": "^2.1.0"
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.5",
+    "sequelize-auto": "0.5.3"
   },
   "devDependencies": {
-    "@types/node": "^14.0.27",
+    "@types/node": "^14.6.4",
     "@types/sequelize": "^4.28.9",
-    "commitizen": "^4.1.2",
-    "cz-conventional-changelog": "^3.2.0",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^8.0.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"

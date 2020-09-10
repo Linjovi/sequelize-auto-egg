@@ -29,7 +29,7 @@ export default class SequelizeAutoEgg extends SequelizeAuto {
         .replace(/\tunique: true,\n\t\t/g, "")
         .replace(/\tdefaultValue: [0-9\.a-zA-Z\']+\,\n\t\t/g, "")
         .replace(/\n\t/g, '\n')
-        .replace('"',"'");
+        .replace(/\"/g,"'");
     });
     this.eggModel = modelObj;
     this.controllerModel = controllerObj;
@@ -50,4 +50,4 @@ export function genEggSequelize() {
   });
 }
 
-genEggSequelize();
+// genEggSequelize();
